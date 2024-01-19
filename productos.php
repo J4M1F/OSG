@@ -61,6 +61,7 @@ a:hover {
                 <th>Precio</th>
                 <th>Nombre</th>
                 <th>Descripción</th>
+                <th></th>
             </tr>
         <?php    
        foreach($result as $clave => $valor):?>
