@@ -385,41 +385,37 @@ text-transform: uppercase;
     .mapa-texto {
         font-size: 4vw;
     }
+    .mural p {
+        font-size: 18px;
+    }
 }
 .container{
     text-align: center;
     font-family: 'Poppins', sans-serif;
 }
 .mural{
-    width: 1000px;
-    height: 500px;
-    overflow: hidden;
     position: relative;
-    margin: 20px auto;
-    margin-top: 20px;
+    text-align: center;
 }
 .mural img{
     width: 100%;
-    height: 100%;
+    height: auto;
 }
 .mural p{
     font-family: 'Poppins', sans-serif;
-    color: black;
-    position: absolute;  
-    top: 2%;
-   left: 42.5%;
-   right: 57.5%;
-   text-align: center;
-   font-size: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #181818;
+    font-size: 24px;
+    font-weight: bold;
 }
 .mapa-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 20px;
-    margin-bottom: 20px;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
 }
-
 .mapa {
     width: 100%;
     max-width: 400px;
@@ -428,7 +424,20 @@ text-transform: uppercase;
     border-radius: 8px;
     overflow: hidden;
 }
+.mapa{
+    flex: 1 1 400px;
+    margin-bottom: 20px;
+}
+.mapa-texto {
 
+    flex: 1 1 400px;
+    margin-bottom: 20px;
+}
+.mapa-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
 .mapa iframe {
     width: 100%;
     height: 100%;
@@ -448,22 +457,8 @@ text-transform: uppercase;
     color: #555;
     font-family: 'Poppins', sans-serif;
 }
-.mapa-container h1 {
-    text-align: center;
-    font-family: 'Oswald', sans-serif;
-    font-size: large;
-}
-.mapa-texto {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color:#181818;
-    font-size: large;
-    font-weight: bold;
-    
-}
+
+
 .contacto-txt{
     flex-basis: 50%;
     text-align: center;
@@ -482,11 +477,8 @@ text-transform: uppercase;
 
 }
 .contacto-content{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex: 1;
-    padding: 0 200px;
+   display: flex;
+   flex-wrap: wrap;
 }
 .contacto-img{
    flex-basis: 50%;
@@ -568,4 +560,10 @@ text-transform: uppercase;
     display: flex;
     flex-direction: column;
     text-align: left;
+}
+#cesta-link {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
 }
